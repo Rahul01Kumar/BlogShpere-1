@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+        <title>Climate Change</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="Climate Change.css">
+        <link rel="icon" href="https://lh3.googleusercontent.com/nnrFv-c9rIEXU-NEuT0V06D6f6nDP4Y3KWyGC_PDvtY2IfzQc6pYqiW3oCLPlnmt314QoH89=p">
+        <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <style>/* ----- Climate Change ----- */
+
+* {
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 40px;
+}
+
+/*
+#navbar {
+    background: transparent !important;
+    transition: .5s;
+}
+.scrolled {
+    background: #000 !important;
+    transition: .5s;
+}
+*/
+.navbar {
+    /*border-bottom: 5px solid #fff;*/
+    box-shadow: 0px 6px 14px 3px #333333ee, inset 0px 10px 10px 0px #ffffff73, inset 0px -11px 10px 0px #0000004d;
+    background: #26a236;
+    transition: .5s;
+}
+.navbar .navbar-toggler {
+    padding: .25rem 0;
+}
+.navbar .navbar-toggler .fas {
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+    top: -3px;
+    text-shadow: 0px 4px 10px #3c3c3c;
+}
+.navbar .navbar-collapse .navbar-nav {
+    position: relative;
+    top: -10px;
+}
+/*
+.navbar .navbar-collapse .nav-item:enabled,
+.navbar .navbar-collapse .nav-item:hover {
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    color: #000;
+}
+*/
+.navbar a img {
+    width: 50px;
+}
+.navbar .navbar-nav .active {
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 6px 10px 1px #524a49, inset 0px -4px 5px 1px #c5c5c5;
+}
+.navbar .navbar-nav .active a {
+    color: #000 !important;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 20px;
+}
+/*
+.navbar .navbar-nav .nav-item:active {
+    background: #fff;
+    color: #000;
+}
+*/
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #ffffffee;
+}
+.navbar .navbar-nav .nav-item .active {
+    background: #fff;
+    color: #000;
+}
+section .container-fluid {
+    position: relative;
+    top: 50px;
+}
+
+/* Home Section */
+.home .container-fluid:nth-child(1) {
+    height: 93vh;
+    background: url('http://www.unenvironment.org/sites/default/files/2017-09/landind-page%20shutterstock_95405056.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .container-fluid:nth-child(1) h1 {
+    font-size: 80px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    width: 100%;
+    text-shadow: 7px 2px 8px #000;
+    font-variant: small-caps;
+}
+.home .container-fluid:nth-child(2) .container .navbar .nav {
+/*    border-bottom: 2px solid #0072ff;*/
+    margin: 0 0 20px 0;
+}
+.home .container-fluid:nth-child(2) .container .navbar .active {
+    border-bottom: 3px solid #0072ff;
+}
+.home .container-fluid:nth-child(2) .container .navbar .active a {
+    color: #0072ff!important;
+}
+.home .container-fluid:nth-child(2) .container .card-columns .card {
+    border-radius: 5px 5px 25px 25px;
+}
+
+/* Articles */
+.articles .container-fluid .card-columns .card .card-body {
+    padding: 0.45rem;
+}
+.articles .container-fluid .card-columns .card .card-text {
+    max-height: 150px;
+    overflow: auto;
+}
+.articles .container-fluid .card-columns .card:nth-child(1) {
+    background: #ec3f3f;
+}
+.articles .container-fluid .card-columns .card:nth-child(2) {
+    background: #ec8122;
+}
+.articles .container-fluid .card-columns .card:nth-child(3) {
+    background: #35b926;
+}
+.articles .container-fluid .card-columns .card:nth-child(4) {
+    background: #2ab5d6;
+}
+.articles .container-fluid .card-columns .card:nth-child(5) {
+    background: #7c34ec;
+}
+.articles .container-fluid .card-columns .card:nth-child(6) {
+    background: #e828c7;
+}
+.articles .container-fluid .card-columns .card a {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+}
+.articles .container-fluid .card-columns .card img {
+    height: 50px;
+    background: #fff;
+}
+.articles .container-fluid .card-columns .card img:nth-child(2),
+.articles .container-fluid .card-columns .card img:nth-child(3) {
+    /*transform: scale(.6) translateX(-20px);*/
+}
+
+/* Explore */
+.explore .container-fluid .card-columns .card:nth-child(1) {
+    background: #ec3f3f;
+}
+.explore .container-fluid .card-columns .card:nth-child(2) {
+    background: #ec8122;
+}
+.explore .container-fluid .card-columns .card:nth-child(3) {
+    background: #eaea30;
+}
+.explore .container-fluid .card-columns .card:nth-child(4) {
+    background: #35b926;
+}
+.explore .container-fluid .card-columns .card:nth-child(5) {
+    background: #2ab5d6;
+}
+.explore .container-fluid .card-columns .card:nth-child(6) {
+    background: #3146e0;
+}
+.explore .container-fluid .card-columns .card:nth-child(7) {
+    background: #7c34ec;
+}
+.explore .container-fluid .card-columns .card:nth-child(8) {
+    background: #e828c7;
+}
+.explore .container-fluid .card-columns .card:nth-child(9) {
+    background: #ec3f3f;
+}
+.explore .container-fluid .container:nth-child(2) {
+    background: #ec3f3f;
+}
+.explore .container-fluid .container:nth-child(3) {
+    background: #35b926;
+}
+.explore .container-fluid .container:nth-child(4) {
+    background: #2ab5d6;
+}
+.explore .container-fluid:last-child {
+    margin-top: 25px;
+}
+.explore .container-fluid:last-child .container {
+    background: #8e31e0;
+}
+.explore .container-fluid .container .list-group {
+    width: 350px;
+    overflow: hidden;
+}
+.explore .container-fluid .container .list-group li {
+    border: 1px solid #ffffff7a;
+    border-right: none;
+    border-left: none;
+}
+.explore .container-fluid .container .last {
+    width: 60%;
+}
+
+/* Solution */
+.solution .table thead tr {
+    background: #dc6023;
+}
+.solution .table tbody tr td:nth-child(1) {
+    background: #1ec33b;
+}
+.solution .table tbody tr td:nth-child(2) {
+    background: #1ac1c1;
+}
+
+/* About Us */
+.about_us {
+
+}
+.about_us .container-fluid .container .card-columns .card .card-body {
+    transform: scale(0);
+}
+.about_us .container-fluid .container .card-columns .card a:hover ~ .card-body {
+    transform: scale(1);
+}
+.about_us .container-fluid .card-columns .card:nth-child(1) {
+    background: #ec3f3f;
+}
+.about_us .container-fluid .card-columns .card:nth-child(2) {
+    background: #ec8122;
+}
+.about_us .container-fluid .card-columns .card:nth-child(3) {
+    background: #35b926;
+}
+.about_us .container-fluid .card-columns .card:nth-child(4) {
+    background: #2ab5d6;
+}
+.about_us .container-fluid .card-columns .card:nth-child(5) {
+    background: #7c34ec;
+}
+.about_us .container-fluid .card-columns .card:nth-child(6) {
+    background: #e828c7;
+}
+.about_us .container-fluid .card-columns .card img {
+    transition: .5s;
+}
+.about_us .container-fluid .card-columns .card h5 {
+    margin: 0;
+    padding: 10px 0;
+}
+.about_us .container-fluid .card-columns .card a {
+    display: inline-block;
+    padding: 5px 20px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transition: .5s;
+    border-radius: 20px;
+    transform: scale(0);
+    color: #fff;
+    float: right;
+}
+.about_us .container-fluid .card-columns .card {
+    transition: .5s;
+    position: relative;
+    right: 0;
+    left: 0;
+    box-shadow: 1px 8px 8px 0px #0000007c;
+}
+.about_us .container-fluid .card-columns .card:hover {
+    transform: scale(1.005);
+    z-index: +5;
+    padding-bottom: 15px;
+    box-shadow: 0px 20px 20px 0px #0000004d;
+}
+.about_us .container-fluid .card-columns .card:hover img {
+    transform: scale(1);
+}
+.about_us .container-fluid .card-columns .card:hover a {
+    transform: scale(1);
+}
+.about_us .container-fluid .card-columns .card a:hover {
+    background: #fff;
+    color: #262626;
+}
+
+
+@media (max-width: 576px) {
+    .navbar .navbar-nav .nav-item .nav-link {
+        padding-left: 20px;
+    }
+    .navbar .navbar-nav .nav-item:hover {
+        background: #fff;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0px 6px 10px 1px #524a49, inset 0px -4px 5px 1px #c5c5c5;
+        outline: none !important;
+        border: none !important;
+    }
+    .navbar .navbar-nav .nav-item:hover a {
+        color: #000 !important;
+    }
+}
+@media (max-width: 425px) {
+    .explore .container-fluid .container .list-group {
+        width: 85%;
+    }
+    .explore .container-fluid .last {
+        width: 80%;
+    }
+}</style>
+    </head>
+    <body data-spy="scroll" data-target="#navbar" data-offset="50"><nav class="navbar navbar-expand-sm fixed-top" id="navbar">
+            <a class="navbar-brand" href="#"><img class="rounded-circle" src="https://lh3.googleusercontent.com/nnrFv-c9rIEXU-NEuT0V06D6f6nDP4Y3KWyGC_PDvtY2IfzQc6pYqiW3oCLPlnmt314QoH89=p" alt="logo"></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><i class="fas fa-bars"></i></button>
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+<ul class="navbar-nav nav-tabs ml-auto mr-2 mt-3">
+<li class="nav-item section-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item section-item"><a class="nav-link" href="#articles">Articles</a></li><li class="nav-item section-item"><a class="nav-link" href="#explore">Explore</a></li><li class="nav-item section-item">
+                        <a class="nav-link" href="#solution">Solution</a>
+                    </li>
+                    </ul>
+            </div>
+        </nav>
+        <section class="home" id="home" style="display: block;">
+            <div class="container-fluid bg-dark">
+                <h1 class="text-center text-light">Climate Change</h1>
+            </div>
+        </section>
+        <section class="articles" id="articles" style="display: none;">
+            <div class="container-fluid bg-dark pt-5 pb-4 my-3 mb-4">
+                <h2 class="text-center text-light mb-5">Climate Change</h2>
+                <div class="card-columns px-3">
+                    <div class="card pb-3">
+                        <div class="card-body">
+                            <p class="card-text text-center text-light">Climate change is a long-term change in the average weather patterns that have come to define Earth’s local, regional and global climates. These changes have a broad range of observed effects that are synonymous with the term.</p>
+                        </div>
+                        <img class="img-figure rounded mx-auto d-block" src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png" alt="Card image">
+                        <br>
+                        <a target="_blank" href="https://climate.nasa.gov/resources/about-climate-change/" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card pb-3">
+                        <div class="card-body">
+                            <p class="card-text text-center text-light">THIRTY YEARS AGO, the potentially disruptive impact of heat-trapping emissions from burning fossil fuels and rain forests became front-page news. It had taken a century of accumulating science,</p>
+                        </div>
+                        <img class="img-figure rounded mx-auto d-block" style="transform: scale(.6)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/1280px-Natgeologo.svg.png" alt="Card image">
+                        <br>
+                        <a target="_blank" href="https://www.nationalgeographic.com/magazine/2018/07/embark-essay-climate-change-pollution-revkin/" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card pb-3">
+                        <div class="card-body">
+                            <p class="card-text text-center text-light">The planet's climate has constantly been changing over geological time. The global average temperature today is about 15C, though geological evidence suggests it has been much higher and lower in the past. However, the current period of warming is occurring more rapidly than many past events.</p>
+                        </div>
+                        <img class="img-figure rounded mx-auto d-block" style="transform: scale(.6)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/BBC.svg/1024px-BBC.svg.png" alt="Card image">
+                        <br>
+                        <a target="_blank" href="https://www.bbc.com/news/science-environment-24021772" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card pb-3">
+                        <div class="card-body">
+                            <p class="card-text text-center text-light">Climate change occurs when changes in Earth's climate system result in new weather patterns that last for at least a few decades, and maybe for millions of years. The climate system is comprised of five interacting parts, the atmosphere(air), hydrosphere (water), cryosphere (ice and permafrost), biosphere (living things), and lithosphere (earth's crust and upper mantle). The climate system receives nearly all of its energy from the sun, with a relatively tiny amount from earth's interior.</p>
+                        </div>
+                        <img class="img-figure rounded-circle mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png" alt="Card image">
+                        <br>
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/Climate_change" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card pb-3">
+                        <div class="card-body">
+                            <p class="card-text text-center text-light">Earth’s climate is now changing faster than at any point in the history of modern civilization, primarily as a result of human activities. Global climate change has already resulted in a wide range of impacts across every region of the country and many sectors of the economy that are expected to grow in the coming decades.</p>
+                        </div>
+                        <img class="img-figure rounded mx-auto d-block" src="https://usclivar.org/sites/default/files/images/usgcrp-logo-72dpi-dark-blue-letters.jpg" alt="Card image">
+                        <br>
+                        <a target="_blank" href="https://www.globalchange.gov/climate-change" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card pb-3">
+                        <div class="card-body">
+                            <p class="card-text text-center text-light">Climate change is one of the most pervasive and threatening issues of our time, with far-reaching impacts in the twenty-first century. Climate change is expected to have unprecedented implications on where people can settle, grow food, build cities, and rely on functioning ecosystems for the services they provide.</p>
+                        </div>
+                        <img class="img-figure rounded mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/UNEP_logo.svg/200px-UNEP_logo.svg.png" alt="Card image">
+                        <br>
+                        <a target="_blank" href="https://www.unenvironment.org/explore-topics/climate-change/about-climate-change" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark pt-5 pb-4 mt-3">
+                <h2 class="text-center text-light text-light mb-5">Global Warming</h2><div class="card-columns px-3">
+                    <div class="card pb-3">
+                        <div class="card-body">
+                            <p class="card-text text-center text-light">Global warming is the long-term heating of Earth’s climate system observed since the pre-industrial period (between 1850 and 1900) due to human activities, primarily fossil fuel burning</p>
+                        </div>
+                        <img class="img-figure rounded mx-auto d-block" src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png" alt="Card image">
+                        <br>
+                        <a target="_blank" href="https://climate.nasa.gov/resources/about-global-warming/" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card pb-3">
+                        <div class="card-body">
+                            <p class="card-text text-center text-light">Glaciers are melting, sea levels are rising, cloud forests are dying, and wildlife is scrambling to keep pace. It has become clear that humans have caused most of the past century's warming by releasing heat-trapping gases as we power our modern lives. Called greenhouse gases, their levels are higher now than at any time in the last 800,000 years.</p>
+                        </div>
+                        <img class="img-fluid rounded mx-auto d-block" style="transform: scale(.6)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/1280px-Natgeologo.svg.png" alt="Card image">
+                        <br>
+                        <a target="_blank" href="https://www.nationalgeographic.com/environment/global-warming/global-warming-overview/" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card pb-3">
+                        <div class="card-body">
+                            <p class="card-text text-center text-light">Top scientists are urging changes "in all aspects of society" to limit global climate warming to 1.5C. Experts say it's extremely likely that human activity is the main cause of recent global warming. The Intergovernmental Panel on Climate Change (or IPCC) has produced a special report saying that our planet is heating up too quickly and it's time for the whole world to make an effort to change it.</p>
+                        </div>
+                        <img class="img-fluid rounded mx-auto d-block" style="transform: scale(.6)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/BBC.svg/1024px-BBC.svg.png" alt="Card image">
+                        <br>
+                        <a target="_blank" href="https://www.bbc.com/news/av/world-africa-45971337/explainer-what-is-global-warming" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card pb-3">
+                        <div class="card-body">
+                            <p class="card-text text-center text-light">Global warming is a long-term rise in the average temperature of the Earth's climate system, an aspect of climate changeshown by temperature measurements and by multiple effects of the warming.Though earlier geological periods also experienced episodes of warming, the term commonly refers to the observed and continuing increase in average air and ocean temperatures since 1900 caused mainly by emissions of greenhouse gasses in the modern industrial economy.</p>
+                        </div>
+                        <img class="img-fluid rounded-circle mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png" alt="Card image">
+                        <br>
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/Global_warming" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card pb-3">
+                        <div class="card-body">
+                            <p class="card-text text-center text-light">Over the past 50 years, the average global temperature has increased at the fastest rate in recorded history. And experts see the trend is accelerating: All but one of the 16 hottest years in NASA’s 134-year record have occurred since 2000. Climate change deniers have argued that there has been a “pause” or a “slowdown” in rising global temperatures, but several recent studies, including a 2015 paper published in the journal Science, have disproved this claim. And scientists say that unless we curb global-warming emissions, average U.S. temperatures could increase by up to 10 degrees Fahrenheit over the next century.</p>
+                        </div>
+                        <img class="img-fluid rounded-bottom mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/NRDC_bear_logo.svg/250px-NRDC_bear_logo.svg.png" alt="Card image">
+                        <br>
+                        <a target="_blank" href="https://www.nrdc.org/stories/global-warming-101" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card pb-3">
+                        <div class="card-body">
+                            <p class="card-text text-center text-light">Our climate is determined by patterns of temperature, wind, atmospheric pressure, humidity and rain over a long period of time. There are different climates around the world, such as tropical, dry and moderate. As a large country, Australia has a variety of climates. The climate of an area determines its seasons and when they come and go. This, in turn, affects the type of plants that grow and which animals survive. The species and places we love depend on intricate ecosystems, and even small changes to the climate can disrupt the delicate balance of nature.</p>
+                        </div>
+                        <img class="img-fluid rounded mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/WWF_logo.svg/1200px-WWF_logo.svg.png" alt="Card image">
+                        <br>
+                        <a target="_blank" href="https://www.wwf.org.au/what-we-do/climate/impacts-of-global-warming#gs.6yne8b" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="explore" id="explore" style="display: none;">
+            <div class="container-fluid bg-dark pt-5 pb-4 my-3 mb-4">
+                <div class="pb-3">
+                    <img class="img-fluid rounded mx-auto d-block" src="https://climate.nasa.gov/system/content_pages/main_images/1309_globaltemps_agency_comparison_2018.gif" alt="Global_Temperature">
+                    <br>
+                    <h4 class="card-title text-center text-light">Global Temperature Agency Comparison 2018</h4>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark pt-5 pb-4 my-3 mb-4">
+                <h2 class="text-center text-light mb-5">Impact</h2>
+                <div class="card-columns">
+                    <div class="card">
+                        <img class="rounded card-img-top" src="https://cdn.vox-cdn.com/uploads/chorus_image/image/62320485/shutterstock_285980522.0.jpg" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-light">Global Temperature Rise</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="rounded card-img-top" src="https://img.newatlas.com/climate-change-ocean-warming-worse-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=crop&h=347&q=60&rect=0%2C206%2C1440%2C810&w=616&s=55a0c4753d268dd145c0c30afef687f6" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-light">Warming Oceans</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="rounded card-img-top" src="http://1.bp.blogspot.com/-Ps8RybeXtns/ULrCwHXmJwI/AAAAAAAAApI/LWlFPHh8oRc/s1600/GR_maps.jpg" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Shrinking Ice Sheets</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="rounded card-img-top" src="https://lh3.googleusercontent.com/DD5TBOaPPPpT5N3cWOXTndYsB_CgEzOKQbabyJqtDIxjVGTKO1xn324Ugj6fyiRw6cKzbOpGlQ=p" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-light">Rising Sea Level</h5>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <img class="rounded card-img-top" src="https://lh3.googleusercontent.com/fdlMRjWXdrwlwG5yy5M1ThiU53pSbWtAZocmE8BYYHEzAg--uGnk0LVccdlgd8dlZUJYLe0v=p" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-light">Extreme Weather</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="rounded card-img-top" src="https://www.greenandgrowing.org/wp-content/uploads/2018/03/ocean-acidification-causes-and-effects-1024x504.jpg" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-light">Ocean Acidification</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="rounded card-img-top" src="https://lh3.googleusercontent.com/OvkqQXzaIdl0Nn7sONAPweMiQtZamngAcoVvrt9rw9NvqEuRIOaN7l-LtISDCp3fHidhnYfJPA=p" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-light">Forest Fires</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="rounded card-img-top" src="https://lh3.googleusercontent.com/K9xB0pw1_f4CaZIE7HHwKALgovdEyy20kT0w633GL59Xm3tE2qj1wqHG2Aeplx0g4aeI5JKZRg=p" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-light">Species & Habitat Loss</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="rounded card-img-top" src="https://lh3.googleusercontent.com/ZLRZGce2AY5mTg3iYBZMv3L3yhykU5eM2rDnOstQhA6Y68A7nyCICZGr-WrDQwBRYY6Mvv99vg=p" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-light">Climate Refugees</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark pt-5 pb-5 mt-3 mb-0">
+                <h2 class="text-center text-light mb-5">Causes</h2>
+
+                <div class="container py-4 rounded">
+                    <h3 class="card-title text-center text-light my-4">Green House Gases</h3>
+                    <img class="img-fluid rounded mx-auto d-block" src="https://climate.nasa.gov/system/internal_resources/details/original/249_Causes-greenhouse-gas-molecules-cropped-more-55.jpg" alt="">
+                    <ul class="list-group list-group-flush text-light mt-4 mx-auto d-block">
+                        <li class="list-group-item bg-transparent">Carbon Dioxide</li>
+                        <li class="list-group-item bg-transparent">Water Vapour</li>
+                        <li class="list-group-item bg-transparent">Methane</li>
+                        <li class="list-group-item bg-transparent">Nitrous Oxide</li>
+                        <li class="list-group-item bg-transparent">Chlorofluorocarbons (CFCs)</li>
+                    </ul>
+                </div>
+                <div class="container py-2 px-5 mb-5 rounded" style="position: relative;top: 50px;">
+                    <h3 class="card-title text-center text-light my-4">Human Activities</h3>
+                    <img class="img-fluid rounded mx-auto d-block" src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period1/2014/10/27/Photos/smoke%20stack2.JPG" alt="">
+                    <br>
+                    <p class="text-center text-light" style="">In its Fifth Assessment Report, the Intergovernmental Panel on Climate Change, a group of 1,300 independent scientific experts from countries all over the world under the auspices of the United Nations, concluded there's a more than 95 percent probability that human activities over the past 50 years have warmed our planet.</p>
+                </div>
+                <div class="container py-2 px-5 mb-5 rounded" style="position: relative;top: 50px;">
+                    <h3 class="card-title text-center text-light my-4">Solar Irradience</h3>
+                    <img class="img-fluid rounded mx-auto d-block" src="https://climate.nasa.gov/system/content_pages/main_images/1_normPage-3.jpg" alt="">
+                    <br>
+                    <p class="text-center text-light" style="">It's reasonable to assume that changes in the Sun's energy output would cause the climate to change, since the Sun is the fundamental source of energy that drives our climate system. Indeed, studies show that solar variability has played a role in past climate changes.</p>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark pb-5 ">
+                <div class="container py-2 px-5 mb-5 rounded" style="position: relative;top: 50px;">
+                    <h3 class="card-title text-center text-light mt-3 mb-5">Explore More</h3>
+                    <a href="https://climate.nasa.gov/images-of-change" class="btn btn-light mx-auto d-block mt-4 last" style="width: 50%" target="_blank"><h4>Images of Change</h4></a>
+                    <br>
+                    <a href="https://www.nationalgeographic.com/magazine/2013/09/rising-seas-ice-melt-new-shoreline-maps/" class="btn btn-light mx-auto d-block my-4 last" target="_blank"><h4>World After the Floods</h4></a>
+                </div>
+            </div>
+        </section>
+        <section class="solution" id="solution" style="display: none;">
+            <div class="container-fluid bg-dark pt-5 pb-4 mt-3">
+                <h2 class="text-center text-light mb-5">Migration & Adaptation</h2>
+
+                <div class="pb-3">
+                    <img class="img-fluid rounded mx-auto d-block" src="https://saaccionasostenibilidad.blob.core.windows.net/media/461807/mitigation-adaptation-climate-change.jpg">
+                    <br>
+                    <table class="table table-responsive text-light mt-5" style="max-height:400px;overflow:auto;">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Migration</th>
+                                <th class="text-center">Adaptation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-justify"><b>Mitigation</b> – reducing climate change – involves reducing the flow of heat-trapping greenhouse gases into the atmosphere, either by reducing sources of these gases (for example, the burning of fossil fuels for electricity, heat or transport) or enhancing the “sinks” that accumulate and store these gases (such as the oceans, forests and soil)</td>
+                                <td class="text-justify"><b>Adaptation</b> – adapting to life in a changing climate – involves adjusting to actual or expected future climate. The goal is to reduce our vulnerability to the harmful effects of climate change (like sea-level encroachment, more intense extreme weather events or food insecurity). It also encompasses making the most of any potential beneficial opportunities associated with climate change (for example, longer growing seasons or increased yields in some regions).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+                              
+            
+        <script src="Climate Change.js"></script>
+        <script type="text/javascript">
+            /*
+            $(document).scroll(function() {
+                $('#navbar').toggleClass('scrolled', $(this).scrollTop() > $('#navbar').height());
+            })
+            */
+            /*
+            window.onscroll = function() {
+                var navbar = document.getElementById('navbar');
+                console.log(navbar.height);
+                console.log();
+                
+                if(this.scrollTop > navbar.height) {
+                    navbar.classList.add('scrolled');
+                }
+                else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+            */
+        </script>
+        <script type="text/javascript">
+            /*
+            var section = document.getElementsByTagName('section');
+            var sectionLink = document.getElementsByClassName('section-item');
+
+
+            for (var i = 0; i < sectionLink.length; i++) {
+                sectionLink[i].onclick = function() {
+                    //remove class from sibling
+                    var el = sectionLink[0];
+                    while (el) {
+                        if (el.tagName === "LI") {
+                            //remove class
+                            el.classList.remove("active");
+                        }
+                        //pass to the new sibling
+                        el = el.nextSibling;
+                    }
+                    this.classList.add("active");
+                };
+            }
+            */
+        </script>
+        <script type="text/javascript">
+            
+            var section = document.getElementsByTagName('section');
+            var links = document.getElementsByClassName('section-item');
+            for (let i = 0; i < links.length; i++) {
+              links[i].onclick = function() {
+                    sectionDisplay(i);
+                }
+            }
+            function sectionDisplay(i) {
+                for (let j = 0; j < section.length; j++) {
+                    section[j].style.display = 'none';
+                    //section-item[j].style.id = '';
+                }
+                section[i].style.display = 'block';
+                //section-item[i].id = 'active';
+            }
+            
+        </script>
+        <script type="text/javascript">
+            /*
+            var section = document.getElementsByTagName('section');
+            var links = document.getElementsByClassName('section-item');
+            for (let i = 0; i < links.length; i++) {
+              links[i].onclick = function() {
+                    sectionDisplay(i);
+                }
+            }
+            function sectionDisplay(i) {
+                for (let j = 0; j < section.length; j++) {
+                    section-item[j].style.id = '';
+                }
+                section-item[i].id = 'active';
+            }
+            */
+        </script>
+        <script type="text/javascript">
+            /*
+            function section(h) {
+                var section = document.getElementsByTagName('section');
+                for (let i = 0; i < 6; i++) {
+                    if (i == h) {
+                        continue;
+                        section[i].style.display = 'block';
+                    }
+                    section[i].style.display = 'none';
+                }
+            }
+            */
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

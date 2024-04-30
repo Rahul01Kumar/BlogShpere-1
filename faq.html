@@ -1,0 +1,256 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/linuxguist/faqa@main/styles.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/linuxguist/faqa@main/stylesheet.css">
+
+
+<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery/2.2.1/jquery.min.js"></script>
+
+
+<style type="text/css">
+  
+  html,body {
+    background-color:#6f00fe !important;
+  }  
+
+.faq {
+      text-align: center;
+      justify-content: center;
+      padding:20px;
+      width: 80%;
+    }
+    .faq-icon {
+        height: 18px; 
+        width: 18px; 
+        margin-top: 3px;
+    }
+    .accordion {
+      background-color: khaki;
+      color: #282A35;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      transition: 0.4s;
+    }
+    .active, .accordion:hover {
+      background-color: yellow;
+      color: #282A35;
+    }
+    .active {
+      border-radius: 10px 10px 0px 0px;
+    }
+    .details-description {
+     font-size:22px;
+     margin-top:20px
+    }
+    .panel {
+      padding: 0 10px;
+      padding-left: 40px;
+      padding-right: 40px;
+      background-color: #f3ecea;
+      margin-top:-28px;
+      color: #282A35;
+      display: none;
+      overflow: hidden;
+      border-radius: 0px 0px 10px 10px;
+      text-align: left;
+    }
+    .panel, .accordion {
+      margin-bottom: 2rem;
+    }
+    button.accordion {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    .paragraphs {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        white-space: pre-wrap;
+    }
+
+    .header {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Verdana', sans-serif;
+  color: #b393d3;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #957dad,
+               1px 2px 0px #957dad,
+               1px 3px 0px #957dad,
+               1px 4px 0px #957dad,
+               1px 5px 0px #957dad,
+               1px 6px 0px #957dad,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+
+</style>
+
+<div class="w3-center w3-animate-zoom" style="margin-top: -1px;">
+            <div class="w3-center w3-content">
+                <div class="faq w3-center w3-content" style="padding-top: 55px;">
+                    <h2 class="header" style="color: #b393d3;"><b>Frequently Asked Questions</b></h2><br>
+                    <button class="accordion" style="display: flex; flex-direction: row;"><img class="faq-icon" src="https://cdn.jsdelivr.net/gh/linuxguist/faqa@main/chevron-down.svg"> &nbsp; &nbsp; <b style="padding-top: 2px;">Is Blogsphere free to use?</b></button>
+                    <div class="panel" style="display: none;">
+                        <div class="paragraphs" id="myDiv_id1"></div>
+                        <p id="paragraph_id1" style="display: none;">Yes, Blogsphere has a free plan that allows you to create and publish a blog with limited features. They also offer premium plans with additional features and customization options. 
+</p>
+                    </div>   
+                    <button class="accordion" style="display: flex; flex-direction: row;"><img class="faq-icon" src="https://cdn.jsdelivr.net/gh/linuxguist/faqa@main/chevron-down.svg"> &nbsp; &nbsp; <b style="padding-top: 2px;">What kind of support does Blogsphere offer?</b></button>
+                    <div class="panel" style="display: none;">
+                        <div class="paragraphs" id="myDiv_id2"></div>
+                        <p id="paragraph_id2" style="display: none;">Blogsphere offers 24/7 customer support through email, phone, and live chat. They also have a comprehensive knowledge base and community forum where you can find answers to common questions and connect with other Blogsphere users.
+</p>
+                    </div>
+                    <button class="accordion" style="display: flex; flex-direction: row;"><img class="faq-icon" src="https://cdn.jsdelivr.net/gh/linuxguist/faqa@main/chevron-down.svg"> &nbsp; &nbsp; <b style="padding-top: 2px;">What is Blogsphere?</b></button>
+                    <div class="panel" style="display: none;">
+                        <div class="paragraphs" id="myDiv_id3"></div>
+                        <p id="paragraph_id3" style="display: none;">Blogsphere is a blogging platform that allows users to create, publish, and manage their own blogs. It offers a range of features, including customizable themes, multimedia content, built-in SEO tools, and social media integration.
+ 
+</p>
+                    </div>
+                    <button class="accordion" style="display: flex; flex-direction: row;"><img class="faq-icon" src="https://cdn.jsdelivr.net/gh/linuxguist/faqa@main/chevron-down.svg"> &nbsp; &nbsp; <b style="padding-top: 2px;">Can I monetize my blog on Blogsphere?</b></button>
+                    <div class="panel" style="display: none;">
+                        <div class="paragraphs" id="myDiv_id4"></div>
+                        <p id="paragraph_id4" style="display: none;">Yes, Blogsphere allows you to monetize your blog through various methods, including display ads, sponsored posts, and affiliate marketing.
+</p>
+                    </div>
+                    <!-- <button class="accordion" style="display: flex; flex-direction: row;"><img class="faq-icon" src="https://cdn.jsdelivr.net/gh/linuxguist/faqa@main/chevron-down.svg"> &nbsp; &nbsp; <b style="padding-top: 2px;">How to answer your FAQs?</b></button>
+                    <div class="panel" style="display: none;">
+                        <div class="paragraphs" id="myDiv_id5"></div> -->
+                        <!-- <p id="paragraph_id5" style="display: none;">When crafting the answers to your FAQs, involve someone from PR. It’s unlikely you have an entire PR team on your staff, which is OK, but there are plenty of freelance PR specialists who can give input while writing these answers. It will highly benefit you to consider hiring one for a week or two. 
+
+Some of these questions could cause you to expose shortcomings of your product or service, so it is imperative that you position these answers in a positive light while remaining truthful. 
+</p> -->
+                    </div>
+                <!-- </div>
+                <h4 class="undertitle" style="color: #FFFFFF;">Have some other questions? <a href="https://example.com" target="_blank">Visit our support page</a></h4>
+                <a class="spaces-button w3-button w3-round-xxlarge ws-green ws-hover-green" href="https://example.com" style="padding: 10px; padding-left: 80px; padding-right: 80px; margin-top: 20px;margin-bottom:20px">Button For Further Action</a>
+                <h6 style="color: #FFFFFF;"><a href="https://example.com" target="_blank">Terms and Conditions Link</a></h6><br>
+            </div> -->
+        </div>
+
+<script>
+        var acc = document.getElementsByClassName("accordion");
+          var i;
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                  // clearBox('myDiv_id1')
+                } else {
+                  panel.style.display = "block";
+                  var firstElementChild = panel.children[0].id;
+                  var secondElementChild = panel.children[1].id;
+                  // console.log(firstElementChild);
+                  // console.log(secondElementChild);
+                                   
+var text = document.getElementById(secondElementChild).innerHTML;
+                  
+responsiveVoice.speak(text,'UK English Female', parameters);  
+                   printStringByLetter(secondElementChild,firstElementChild);
+                              
+// console.log(text); 
+              
+              // alert('i am here');
+              
+                  
+                  
+                }
+              });
+            }
+        var images = document.querySelectorAll(".faq-icon");
+        images.forEach(function(image) {
+            image.addEventListener("click", changeImage);
+        });
+
+        function changeImage() {
+            if (this.src.match("chevron-down")) {
+            this.src = "https://cdn.jsdelivr.net/gh/linuxguist/faqa@main/chevron-up.svg";
+            } else {
+            this.src = "https://cdn.jsdelivr.net/gh/linuxguist/faqa@main/chevron-down.svg";
+            }
+        }
+      </script>        
+
+<script type="text/javascript">
+
+function printStringByLetter(paragraph_id,myDiv_id) {
+    var myDiv = document.getElementById(myDiv_id);
+    var text = document.getElementById(paragraph_id).innerHTML;
+    // myDiv.innerHTML = "";
+    document.getElementById(myDiv_id).innerHTML = "";
+    // console.log(text.length);
+    var index = 0;
+    var intervalId = setInterval(function() {
+        myDiv.innerHTML += text.charAt(index);
+        index++;
+        // console.log(index);
+        if(index == text.length) {
+            clearInterval(intervalId);
+            index = 0;
+            text = "";
+        }
+    }, 50);    
+}    
+
+function clearBox(elementID)
+{
+    document.getElementById(elementID).innerHTML = "";
+}
+
+</script>      
+
+<!-- <center><a href="https://responsivevoice.org" title="ResponsiveVoice"><h4 style="background-color:white">Powered By ResponsiveVoice Text-To-Speech For Non-commercial personal or non-profit project</h4></a></center>
+
+<div id="text1" style="font-family: sans-serif, serif; font-size: 18px; display:none"> 
+
+<p>Here are some of the most common types of gardens:</p> -->
+
+</div>
+
+
+
+<script>
+
+    function voiceStartCallback() {
+        console.log("Voice started");
+    }
+    
+    function voiceEndCallback() {
+        console.log("Voice ended");
+    }
+    
+    var parameters = {
+        onstart: voiceStartCallback,
+        onend: voiceEndCallback,
+        rate: 0.95
+    }
+    
+</script>
+
+
+<script type="text/javascript">
+
+/*
+
+responsiveVoice.speak("Hello, this is a test using callbacks","UK English Female", parameters);
+
+responsiveVoice.speak("hello world", "UK English Male", {pitch: 2});
+
+responsiveVoice.speak("hello world", "UK English Male", {rate: 1.5});
+
+responsiveVoice.speak("hello world", "UK English Male", {volume: 1});
+
+*/
+
+</script>    
